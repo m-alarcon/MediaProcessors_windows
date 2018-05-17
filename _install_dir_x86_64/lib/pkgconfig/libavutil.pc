@@ -1,0 +1,14 @@
+prefix=/trunk/MediaProcessors_selfcontained/_install_dir_x86_64
+exec_prefix=${prefix}
+libdir=/trunk/MediaProcessors_selfcontained/_install_dir_x86_64/lib
+includedir=/trunk/MediaProcessors_selfcontained/_install_dir_x86_64/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.7.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -lm -luser32 -ladvapi32
+Cflags: -I${includedir}

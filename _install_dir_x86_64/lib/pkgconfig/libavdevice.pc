@@ -1,0 +1,14 @@
+prefix=/trunk/MediaProcessors_selfcontained/_install_dir_x86_64
+exec_prefix=${prefix}
+libdir=/trunk/MediaProcessors_selfcontained/_install_dir_x86_64/lib
+includedir=/trunk/MediaProcessors_selfcontained/_install_dir_x86_64/include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 58.0.101
+Requires: 
+Requires.private: libavfilter >= 7.11.101, libswscale >= 5.0.101, libpostproc >= 55.0.100, libavformat >= 58.5.101, libavcodec >= 58.9.100, libswresample >= 3.0.101, libavutil >= 56.7.100
+Conflicts:
+Libs: -L${libdir}  -lavdevice 
+Libs.private: -lpsapi -lole32 -lstrmiids -luuid -loleaut32 -lshlwapi -lgdi32 -lm -lvfw32 -L/local64/lib -lmingw32 -lSDL2main -lSDL2 -Wl,--no-undefined -lm -ldinput8 -ldxguid -ldxerr8 -luser32 -lgdi32 -lwinmm -limm32 -lole32 -loleaut32 -lshell32 -lversion -luuid -static-libgcc
+Cflags: -I${includedir}

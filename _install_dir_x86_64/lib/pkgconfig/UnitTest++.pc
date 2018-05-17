@@ -1,0 +1,11 @@
+prefix=/trunk/MediaProcessors_selfcontained/_install_dir_x86_64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: UnitTest++
+Description: UnitTest++ is a simple C++ Unit Test Framework
+URL: https://github.com/unittest-cpp/unittest-cpp
+Version: 2.0.0-20-gbc5d87f
+Libs: -L${libdir} -lUnitTest++
+Cflags: -I${includedir}/
