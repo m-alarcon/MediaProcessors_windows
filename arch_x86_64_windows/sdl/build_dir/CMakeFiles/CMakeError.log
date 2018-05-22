@@ -1,0 +1,433 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_eed59/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_eed59.dir/build.make CMakeFiles/cmTC_eed59.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eed59.dir/src.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DHAVE_GCC_PREFERRED_STACK_BOUNDARY -mpreferred-stack-boundary=2   -o CMakeFiles/cmTC_eed59.dir/src.c.obj   -c /C/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/src.c
+cc1.exe: error: -mpreferred-stack-boundary=2 is not between 3 and 4
+make[1]: *** [CMakeFiles/cmTC_eed59.dir/build.make:66: CMakeFiles/cmTC_eed59.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_eed59/fast] Error 2
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_61df7/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_61df7.dir/build.make CMakeFiles/cmTC_61df7.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61df7.dir/src.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DHAVE_ALTIVEC_H_HDR -maltivec   -o CMakeFiles/cmTC_61df7.dir/src.c.obj   -c /C/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/src.c
+gcc.exe: error: unrecognized command line option '-maltivec'; did you mean '-mxsavec'?
+make[1]: *** [CMakeFiles/cmTC_61df7.dir/build.make:66: CMakeFiles/cmTC_61df7.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_61df7/fast] Error 2
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_f125d/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_f125d.dir/build.make CMakeFiles/cmTC_f125d.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f125d.dir/src.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DHAVE_ALTIVEC -maltivec   -o CMakeFiles/cmTC_f125d.dir/src.c.obj   -c /C/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/src.c
+gcc.exe: error: unrecognized command line option '-maltivec'; did you mean '-mxsavec'?
+make[1]: *** [CMakeFiles/cmTC_f125d.dir/build.make:66: CMakeFiles/cmTC_f125d.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_f125d/fast] Error 2
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_MPROTECT failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_76690/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_76690.dir/build.make CMakeFiles/cmTC_76690.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76690.dir/src.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DHAVE_MPROTECT   -o CMakeFiles/cmTC_76690.dir/src.c.obj   -c /C/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/src.c
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/src.c:2:39: fatal error: sys/mman.h: No such file or directory
+                              #include <sys/mman.h>
+                                       ^~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_76690.dir/build.make:66: CMakeFiles/cmTC_76690.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_76690/fast] Error 2
+
+Source file was:
+#include <sys/types.h>
+                             #include <sys/mman.h>
+                             int main() { }
+Determining if the function setenv exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_898bc/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_898bc.dir/build.make CMakeFiles/cmTC_898bc.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_898bc.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=setenv   -o CMakeFiles/cmTC_898bc.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_898bc.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_898bc.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_898bc.dir/objects.a "CMakeFiles/cmTC_898bc.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=setenv  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_898bc.dir/objects.a -Wl,--no-whole-archive  -o cmTC_898bc.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_898bc.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x11): undefined reference to `setenv'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_898bc.dir/build.make:99: cmTC_898bc.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_898bc/fast] Error 2
+
+
+Determining if the function unsetenv exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_e568b/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_e568b.dir/build.make CMakeFiles/cmTC_e568b.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e568b.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=unsetenv   -o CMakeFiles/cmTC_e568b.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e568b.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_e568b.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_e568b.dir/objects.a "CMakeFiles/cmTC_e568b.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=unsetenv  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_e568b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e568b.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_e568b.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x11): undefined reference to `unsetenv'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e568b.dir/build.make:99: cmTC_e568b.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_e568b/fast] Error 2
+
+
+Determining if the function bcopy exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_55005/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_55005.dir/build.make CMakeFiles/cmTC_55005.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_55005.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=bcopy   -o CMakeFiles/cmTC_55005.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function 'bcopy' [-Wbuiltin-declaration-mismatch]
+C:/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_55005.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_55005.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_55005.dir/objects.a "CMakeFiles/cmTC_55005.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=bcopy  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_55005.dir/objects.a -Wl,--no-whole-archive  -o cmTC_55005.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_55005.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x11): undefined reference to `bcopy'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_55005.dir/build.make:99: cmTC_55005.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_55005/fast] Error 2
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_794fc/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_794fc.dir/build.make CMakeFiles/cmTC_794fc.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_794fc.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_794fc.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_794fc.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_794fc.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_794fc.dir/objects.a "CMakeFiles/cmTC_794fc.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_794fc.dir/objects.a -Wl,--no-whole-archive  -o cmTC_794fc.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_794fc.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x11): undefined reference to `strlcpy'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_794fc.dir/build.make:99: cmTC_794fc.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_794fc/fast] Error 2
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_b2a0b/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_b2a0b.dir/build.make CMakeFiles/cmTC_b2a0b.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2a0b.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat   -o CMakeFiles/cmTC_b2a0b.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b2a0b.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_b2a0b.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_b2a0b.dir/objects.a "CMakeFiles/cmTC_b2a0b.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_b2a0b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b2a0b.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_b2a0b.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x11): undefined reference to `strlcat'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_b2a0b.dir/build.make:99: cmTC_b2a0b.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_b2a0b/fast] Error 2
+
+
+Determining if the function _uitoa exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_9f3f8/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_9f3f8.dir/build.make CMakeFiles/cmTC_9f3f8.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f3f8.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa   -o CMakeFiles/cmTC_9f3f8.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9f3f8.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_9f3f8.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_9f3f8.dir/objects.a "CMakeFiles/cmTC_9f3f8.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_9f3f8.dir/objects.a -Wl,--no-whole-archive  -o cmTC_9f3f8.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_9f3f8.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x11): undefined reference to `_uitoa'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9f3f8.dir/build.make:99: cmTC_9f3f8.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_9f3f8/fast] Error 2
+
+
+Determining if the function sigaction exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_7c917/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_7c917.dir/build.make CMakeFiles/cmTC_7c917.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7c917.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=sigaction   -o CMakeFiles/cmTC_7c917.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7c917.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_7c917.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_7c917.dir/objects.a "CMakeFiles/cmTC_7c917.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=sigaction  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_7c917.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7c917.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_7c917.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x11): undefined reference to `sigaction'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_7c917.dir/build.make:99: cmTC_7c917.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_7c917/fast] Error 2
+
+
+Determining if the function sysconf exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_002d6/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_002d6.dir/build.make CMakeFiles/cmTC_002d6.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_002d6.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysconf   -o CMakeFiles/cmTC_002d6.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_002d6.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_002d6.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_002d6.dir/objects.a "CMakeFiles/cmTC_002d6.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysconf  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_002d6.dir/objects.a -Wl,--no-whole-archive  -o cmTC_002d6.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_002d6.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x11): undefined reference to `sysconf'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_002d6.dir/build.make:99: cmTC_002d6.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_002d6/fast] Error 2
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_b6157/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_b6157.dir/build.make CMakeFiles/cmTC_b6157.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b6157.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_b6157.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b6157.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_b6157.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_b6157.dir/objects.a "CMakeFiles/cmTC_b6157.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_b6157.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b6157.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_b6157.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x11): undefined reference to `sysctlbyname'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_b6157.dir/build.make:99: cmTC_b6157.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_b6157/fast] Error 2
+
+
+Determining if the function getauxval exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_9f831/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_9f831.dir/build.make CMakeFiles/cmTC_9f831.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f831.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=getauxval   -o CMakeFiles/cmTC_9f831.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9f831.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_9f831.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_9f831.dir/objects.a "CMakeFiles/cmTC_9f831.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=getauxval  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_9f831.dir/objects.a -Wl,--no-whole-archive  -o cmTC_9f831.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_9f831.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x11): undefined reference to `getauxval'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9f831.dir/build.make:99: cmTC_9f831.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_9f831/fast] Error 2
+
+
+Determining if the function poll exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_d5d94/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_d5d94.dir/build.make CMakeFiles/cmTC_d5d94.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5d94.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=poll   -o CMakeFiles/cmTC_d5d94.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d5d94.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_d5d94.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_d5d94.dir/objects.a "CMakeFiles/cmTC_d5d94.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=poll  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_d5d94.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d5d94.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_d5d94.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x11): undefined reference to `poll'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_d5d94.dir/build.make:99: cmTC_d5d94.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_d5d94/fast] Error 2
+
+
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_e0c20/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_e0c20.dir/build.make CMakeFiles/cmTC_e0c20.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e0c20.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open   -o CMakeFiles/cmTC_e0c20.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e0c20.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_e0c20.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_e0c20.dir/objects.a "CMakeFiles/cmTC_e0c20.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_e0c20.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e0c20.exe -Wl,--major-image-version,0,--minor-image-version,0 -liconv -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_e0c20.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x11): undefined reference to `iconv_open'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e0c20.dir/build.make:99: cmTC_e0c20.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_e0c20/fast] Error 2
+
+
+Determining if the include file alloca.h exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_c1863/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_c1863.dir/build.make CMakeFiles/cmTC_c1863.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c1863.dir/CheckIncludeFile.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos    -o CMakeFiles/cmTC_c1863.dir/CheckIncludeFile.c.obj   -c /C/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: alloca.h: No such file or directory
+ #include <alloca.h>
+          ^~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_c1863.dir/build.make:66: CMakeFiles/cmTC_c1863.dir/CheckIncludeFile.c.obj] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_c1863/fast] Error 2
+
+
+Determining if the function alloca exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_ee471/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_ee471.dir/build.make CMakeFiles/cmTC_ee471.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ee471.dir/CheckFunctionExists.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca   -o CMakeFiles/cmTC_ee471.dir/CheckFunctionExists.c.obj   -c /C/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function 'alloca' [-Wbuiltin-declaration-mismatch]
+C:/media_autobuild/msys64/mingw64/share/cmake-3.10/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_ee471.exe
+/C/media_autobuild/msys64/mingw64/bin/cmake.exe -E remove -f CMakeFiles/cmTC_ee471.dir/objects.a
+/C/media_autobuild/msys64/mingw64/bin/ar.exe cr CMakeFiles/cmTC_ee471.dir/objects.a "CMakeFiles/cmTC_ee471.dir/CheckFunctionExists.c.obj" 
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca  -pipe -static-libgcc -static-libstdc++  -Wl,--whole-archive CMakeFiles/cmTC_ee471.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ee471.exe -Wl,--major-image-version,0,--minor-image-version,0 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+CMakeFiles/cmTC_ee471.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup+0x15): undefined reference to `alloca'
+collect2.exe: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ee471.dir/build.make:99: cmTC_ee471.exe] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_ee471/fast] Error 2
+
+
+Performing C SOURCE FILE Test HAVE_SA_SIGACTION failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_933fc/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_933fc.dir/build.make CMakeFiles/cmTC_933fc.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_933fc.dir/src.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DHAVE_SA_SIGACTION   -o CMakeFiles/cmTC_933fc.dir/src.c.obj   -c /C/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/src.c
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/src.c: In function 'main':
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/src.c:6:40: error: dereferencing pointer to incomplete type 'struct sigaction'
+    (void)sizeof(((struct sigaction *)0)->sa_sigaction);
+                                        ^~
+make[1]: *** [CMakeFiles/cmTC_933fc.dir/build.make:66: CMakeFiles/cmTC_933fc.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_933fc/fast] Error 2
+
+Source file was:
+
+#include <signal.h>
+
+int main()
+{
+   (void)sizeof(((struct sigaction *)0)->sa_sigaction);
+   return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_XINPUT_GAMEPAD_EX failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_291de/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_291de.dir/build.make CMakeFiles/cmTC_291de.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_291de.dir/src.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DHAVE_XINPUT_GAMEPAD_EX   -o CMakeFiles/cmTC_291de.dir/src.c.obj   -c /C/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/src.c
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/src.c:4:9: error: unknown type name 'XINPUT_GAMEPAD_EX'; did you mean 'XINPUT_GAMEPAD_X'?
+         XINPUT_GAMEPAD_EX x1;
+         ^~~~~~~~~~~~~~~~~
+         XINPUT_GAMEPAD_X
+make[1]: *** [CMakeFiles/cmTC_291de.dir/build.make:66: CMakeFiles/cmTC_291de.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_291de/fast] Error 2
+
+Source file was:
+
+        #include <windows.h>
+        #include <xinput.h>
+        XINPUT_GAMEPAD_EX x1;
+        int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_XINPUT_STATE_EX failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_0db6d/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_0db6d.dir/build.make CMakeFiles/cmTC_0db6d.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0db6d.dir/src.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos -DHAVE_XINPUT_STATE_EX   -o CMakeFiles/cmTC_0db6d.dir/src.c.obj   -c /C/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/src.c
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/src.c:4:9: error: unknown type name 'XINPUT_STATE_EX'; did you mean 'XINPUT_STATE'?
+         XINPUT_STATE_EX s1;
+         ^~~~~~~~~~~~~~~
+         XINPUT_STATE
+make[1]: *** [CMakeFiles/cmTC_0db6d.dir/build.make:66: CMakeFiles/cmTC_0db6d.dir/src.c.obj] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_0db6d/fast] Error 2
+
+Source file was:
+
+        #include <windows.h>
+        #include <xinput.h>
+        XINPUT_STATE_EX s1;
+        int main(int argc, char **argv) { }
+Determining if the include file xaudio2.h exists failed with the following output:
+Change Dir: C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/media_autobuild/msys64/usr/bin/make.exe" "cmTC_5a921/fast"
+/trunk/msys64/usr/bin/make -f CMakeFiles/cmTC_5a921.dir/build.make CMakeFiles/cmTC_5a921.dir/build
+make[1]: Entering directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5a921.dir/CheckIncludeFile.c.obj
+/C/media_autobuild/msys64/mingw64/bin/gcc.exe   -mthreads -mtune=generic -O2 -pipe -idirafter C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/sdl/src/video/khronos    -o CMakeFiles/cmTC_5a921.dir/CheckIncludeFile.c.obj   -c /C/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: xaudio2.h: No such file or directory
+ #include <xaudio2.h>
+          ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_5a921.dir/build.make:66: CMakeFiles/cmTC_5a921.dir/CheckIncludeFile.c.obj] Error 1
+make[1]: Leaving directory '/trunk/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_5a921/fast] Error 2
+
+

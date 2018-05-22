@@ -1,0 +1,58 @@
+# This is an automatically generated file. Do not modify.
+
+PREFIX = /trunk/MediaProcessors_selfcontained/_install_dir_x86_64
+SRCDIR = /trunk/MediaProcessors_selfcontained/arch_x86_64_windows/utils/../../MediaProcessors/utils/src
+BUILDDIR = /trunk/MediaProcessors_selfcontained/arch_x86_64_windows/utils/build_dir
+
+# Specify interpreter
+SHELL = /bin/sh
+
+INCLUDE_DIR = $(PREFIX)/include
+LIB_DIR = $(PREFIX)/lib
+EXE_DIR = $(PREFIX)/bin
+LIBNAME = mediaprocsutils
+
+CFLAGS+=-I$(INCLUDE_DIR)
+# 32 /64 bits architecture stuff ...
+LBITS := $(shell getconf LONG_BIT)
+ifeq ($(LBITS),64)
+   # 64 bit stuff here
+   CFLAGS+=-fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64
+else
+   # 32 bit stuff here
+endif
+
+LIBS=-lm -ldl -L$(LIB_DIR) -luriparser -lmingw32
+
+_OBJ = $(wildcard $(SRCDIR)/*.c*)
+OBJ = $(patsubst $(SRCDIR)/%.c*,$(BUILDDIR)/%.o,$(_OBJ))
+
+.PHONY : $(SRCDIR) $(BUILDDIR)
+
+all: build
+
+config:
+	@mkdir -p $(PREFIX)
+	@mkdir -p $(INCLUDE_DIR)
+	@mkdir -p $(INCLUDE_DIR)/lib$(LIBNAME)
+	@mkdir -p $(LIB_DIR)
+	@mkdir -p $(BUILDDIR)
+
+build: config
+	@if [ ! -f $(LIB_DIR)/lib$(LIBNAME).dll.a ] ; then \
+		$(MAKE) $(BUILDDIR)/lib$(LIBNAME); \
+	fi
+
+$(BUILDDIR)/%.o: $(SRCDIR)/%.c*
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+$(BUILDDIR)/lib$(LIBNAME): $(OBJ)
+	$(CC) -o $@.dll $^ -shared -Bdynamic $(CFLAGS) $(LIBS) -Wl,--out-implib,$@.dll.a
+
+install:
+	cp $(BUILDDIR)/lib$(LIBNAME).dll.a $(LIB_DIR)/lib$(LIBNAME).dll.a;
+	cp $(BUILDDIR)/lib$(LIBNAME).dll $(EXE_DIR)/lib$(LIBNAME).dll;
+	cp -a $(SRCDIR)/*.h $(INCLUDE_DIR)/lib$(LIBNAME)/;
+
+clean:
+	rm -rf $(LIB_DIR)/lib$(LIBNAME).dll.a $(EXE_DIR)/lib$(LIBNAME).dll $(INCLUDE_DIR)/lib$(LIBNAME)

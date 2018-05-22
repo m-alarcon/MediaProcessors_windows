@@ -1,0 +1,23 @@
+UnitTest++/RequiredCheckTestReporter.lo: \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/RequiredCheckTestReporter.cpp \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/RequiredCheckTestReporter.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/HelperMacros.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/Config.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/ThrowingTestReporter.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/TestReporter.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/CurrentTest.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/TestResults.h
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/RequiredCheckTestReporter.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/HelperMacros.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/Config.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/ThrowingTestReporter.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/TestReporter.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/CurrentTest.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/TestResults.h:

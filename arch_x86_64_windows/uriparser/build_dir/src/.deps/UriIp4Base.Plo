@@ -1,0 +1,5 @@
+src/UriIp4Base.lo: \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/src/UriIp4Base.c \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/src/UriIp4Base.h
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/src/UriIp4Base.h:

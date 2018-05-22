@@ -1,0 +1,84 @@
+# This is an automatically generated file. Do not modify.
+
+PREFIX = /trunk/MediaProcessors_selfcontained/_install_dir_x86_64
+SRCDIR = /trunk/MediaProcessors_selfcontained/arch_x86_64_windows/codecs/../../MediaProcessors/codecs/src
+BUILDDIR = /trunk/MediaProcessors_selfcontained/arch_x86_64_windows/codecs/build_dir
+
+# Specify interpreter
+SHELL = /bin/sh
+
+# C++ compiler
+CPP = c++
+
+INCLUDE_DIR = $(PREFIX)/include
+LIB_DIR = $(PREFIX)/lib
+EXE_DIR=$(PREFIX)/bin
+LIBNAME = mediaprocscodecs
+
+# Compiler options
+CFLAGS+=-Wall -O3
+CFLAGS+=-I$(INCLUDE_DIR)
+# 32 /64 bits architecture stuff ...
+LBITS := $(shell getconf LONG_BIT)
+ifeq ($(LBITS),64)
+   # 64 bit stuff here
+   CFLAGS+=-fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64
+else
+   # 32 bit stuff here
+endif
+
+LIBS= -lm -ldl -lpthread -lstdc++
+LIBS+= -L$(LIB_DIR) -luriparser -lcjson -lmongoose 
+LIBS+= -lmp3lame -lx264 -lavdevice -lavformat -lavfilter -lavcodec -lswscale -lavutil -lswresample
+LIBS+= -lmediaprocsutils -lmediaprocs
+
+_OBJ = $(wildcard $(SRCDIR)/*.c)
+OBJ = $(patsubst $(SRCDIR)/%.c,$(BUILDDIR)/%.o,$(_OBJ))
+
+LIBS_UTESTS= $(LIBS) -lmediaprocscodecs -lUnitTest++
+
+_OBJ_UTESTS_EXE = $(wildcard $(SRCDIR)/../utests/utests*.c*)
+OBJ_UTESTS_EXE = $(patsubst $(SRCDIR)/../utests/%.c*,$(BUILDDIR)/utests/%.o,$(_OBJ_UTESTS_EXE))
+
+.PHONY : $(SRCDIR) $(BUILDDIR)
+
+all: build
+
+config:
+	@mkdir -p $(PREFIX)
+	@mkdir -p $(INCLUDE_DIR)
+	@mkdir -p $(INCLUDE_DIR)/lib$(LIBNAME)
+	@mkdir -p $(LIB_DIR)
+	@mkdir -p $(BUILDDIR)
+	@mkdir -p $(BUILDDIR)/utests
+
+build: config
+	@if [ ! -f $(LIB_DIR)/lib$(LIBNAME).dll.a ] ; then \
+		$(MAKE) $(BUILDDIR)/lib$(LIBNAME); \
+	fi
+
+$(BUILDDIR)/%.o: $(SRCDIR)/%.c
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+$(BUILDDIR)/lib$(LIBNAME): $(OBJ)
+	$(CC) -o $@.dll $^ -shared -Bdynamic $(CFLAGS) $(LIBS) -Wl,--out-implib,$@.dll.a
+
+install:
+	cp $(BUILDDIR)/lib$(LIBNAME).dll.a $(LIB_DIR)/lib$(LIBNAME).dll.a;
+	cp $(BUILDDIR)/lib$(LIBNAME).dll $(EXE_DIR)/lib$(LIBNAME).dll;
+	cp -a $(SRCDIR)/*.h $(INCLUDE_DIR)/lib$(LIBNAME)/;
+
+utest:
+	$(MAKE) $(EXE_DIR)/$(LIBNAME)_utests
+	chmod +x $(EXE_DIR)/$(LIBNAME)_utests
+	chmod +x $(SRCDIR)/../utests/utests.sh
+	$(SRCDIR)/../utests/utests.sh $(PREFIX) $(LIBNAME)_utests no
+
+$(BUILDDIR)/utests/%.o: $(SRCDIR)/../utests/%.c*
+	$(CPP) -c -o $@ $< $(CFLAGS)
+
+$(EXE_DIR)/$(LIBNAME)_utests: $(OBJ_UTESTS_EXE)
+	$(CPP) -o $@ $^ $(CFLAGS) $(LIBS_UTESTS)
+
+clean:
+	rm -rf $(LIB_DIR)/lib$(LIBNAME).dll.a $(EXE_DIR)/lib$(LIBNAME).dll.a $(INCLUDE_DIR)/lib$(LIBNAME) $(EXE_DIR)/$(LIBNAME)_utests

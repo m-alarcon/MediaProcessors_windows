@@ -1,0 +1,93 @@
+# This is an automatically generated file. Do not modify.
+
+PREFIX = /trunk/MediaProcessors_selfcontained/_install_dir_x86_64
+SRCDIR = /trunk/MediaProcessors_selfcontained/arch_x86_64_windows/muxers/../../MediaProcessors/muxers/src
+BUILDDIR = /trunk/MediaProcessors_selfcontained/arch_x86_64_windows/muxers/build_dir
+
+# Specify interpreter
+SHELL = /bin/sh
+
+# C++ compiler
+CPP = c++
+
+INCLUDE_DIR = $(PREFIX)/include
+LIB_DIR = $(PREFIX)/lib
+EXE_DIR=$(PREFIX)/bin
+LIBNAME = mediaprocsmuxers
+
+# Compiler options
+CFLAGS+=-Wall -O3
+CFLAGS+=-I$(INCLUDE_DIR)
+# Live555's headers
+CFLAGS+=-I$(INCLUDE_DIR)/liveMedia -I$(INCLUDE_DIR)/groupsock \
+-I$(INCLUDE_DIR)/BasicUsageEnvironment -I$(INCLUDE_DIR)/UsageEnvironment
+# 32 /64 bits architecture stuff ...
+LBITS := $(shell getconf LONG_BIT)
+ifeq ($(LBITS),64)
+   # 64 bit stuff here
+   CFLAGS+=-fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64
+else
+   # 32 bit stuff here
+endif
+
+LIBS= -lm -ldl -lpthread -lstdc++
+LIBS+= -L$(LIB_DIR) -luriparser -lcjson -lmongoose 
+# Live555's libs
+LIBS+= -lliveMedia -lgroupsock -lBasicUsageEnvironment -lUsageEnvironment
+LIBS+= -lmediaprocsutils -lmediaprocs
+
+_OBJ = $(wildcard $(SRCDIR)/*.c)
+OBJ = $(patsubst $(SRCDIR)/%.c,$(BUILDDIR)/%.o,$(_OBJ))
+_OBJ_CPP = $(wildcard $(SRCDIR)/*.cpp)
+OBJ_CPP = $(patsubst $(SRCDIR)/%.cpp,$(BUILDDIR)/%.oo,$(_OBJ_CPP))
+
+LIBS_UTESTS= $(LIBS) -lmediaprocsmuxers -lUnitTest++
+
+_OBJ_UTESTS_EXE = $(wildcard $(SRCDIR)/../utests/utests*.c*)
+OBJ_UTESTS_EXE = $(patsubst $(SRCDIR)/../utests/%.c*,$(BUILDDIR)/utests/%.o,$(_OBJ_UTESTS_EXE))
+
+.PHONY : $(SRCDIR) $(BUILDDIR)
+
+all: build
+
+config:
+	@mkdir -p $(PREFIX)
+	@mkdir -p $(INCLUDE_DIR)
+	@mkdir -p $(INCLUDE_DIR)/lib$(LIBNAME)
+	@mkdir -p $(LIB_DIR)
+	@mkdir -p $(BUILDDIR)
+	@mkdir -p $(BUILDDIR)/utests
+
+build: config
+	@if [ ! -f $(LIB_DIR)/lib$(LIBNAME).dll.a ] ; then \
+		$(MAKE) $(BUILDDIR)/lib$(LIBNAME); \
+	fi
+
+$(BUILDDIR)/%.o: $(SRCDIR)/%.c
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+$(BUILDDIR)/%.oo: $(SRCDIR)/%.cpp
+	$(CPP) -c -o $@ $< $(CFLAGS) -std=c++11
+
+$(BUILDDIR)/lib$(LIBNAME): $(OBJ) $(OBJ_CPP)
+	$(CC) -o $@.dll $^ -shared -Bdynamic $(CFLAGS) $(LIBS) -Wl,--out-implib,$@.dll.a
+
+install:
+	cp $(BUILDDIR)/lib$(LIBNAME).dll.a $(LIB_DIR)/lib$(LIBNAME).dll.a;
+	cp $(BUILDDIR)/lib$(LIBNAME).dll $(EXE_DIR)/lib$(LIBNAME).dll;
+	cp -a $(SRCDIR)/*.h $(INCLUDE_DIR)/lib$(LIBNAME)/;
+
+utest:
+	$(MAKE) $(EXE_DIR)/$(LIBNAME)_utests
+	chmod +x $(EXE_DIR)/$(LIBNAME)_utests
+	chmod +x $(SRCDIR)/../utests/utests.sh
+	$(SRCDIR)/../utests/utests.sh $(PREFIX) $(LIBNAME)_utests no
+
+$(BUILDDIR)/utests/%.o: $(SRCDIR)/../utests/%.c*
+	$(CPP) -c -o $@ $< $(CFLAGS) -std=c++11
+
+$(EXE_DIR)/$(LIBNAME)_utests: $(OBJ_UTESTS_EXE)
+	$(CPP) -o $@ $^ $(CFLAGS) $(LIBS_UTESTS) -std=c++11
+
+clean:
+	rm -rf $(LIB_DIR)/lib$(LIBNAME).dll.a $(EXE_DIR)/lib$(LIBNAME).dll $(INCLUDE_DIR)/lib$(LIBNAME) $(EXE_DIR)/$(LIBNAME)_utests

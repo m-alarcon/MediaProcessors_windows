@@ -1,0 +1,62 @@
+# This is an automatically generated file. Do not modify.
+
+PREFIX = /trunk/MediaProcessors_selfcontained/_install_dir_x86_64
+SRCDIR = /trunk/MediaProcessors_selfcontained/arch_x86_64_windows/examples/../../MediaProcessors/examples
+BUILDDIR = /trunk/MediaProcessors_selfcontained/arch_x86_64_windows/examples/build_dir
+
+# Specify interpreter
+SHELL = /bin/sh
+
+INCLUDE_DIR = $(PREFIX)/include
+LIB_DIR = $(PREFIX)/lib
+EXE_DIR=$(PREFIX)/bin
+EXE_PREFIX = mediaprocs
+
+# Compiler options
+CFLAGS+=-Wall -O3
+CFLAGS+=-I$(INCLUDE_DIR)
+# Live555's headers
+CFLAGS+=-I$(INCLUDE_DIR)/liveMedia -I$(INCLUDE_DIR)/groupsock \
+-I$(INCLUDE_DIR)/BasicUsageEnvironment -I$(INCLUDE_DIR)/UsageEnvironment
+# 32 /64 bits architecture stuff ...
+LBITS := $(shell getconf LONG_BIT)
+ifeq ($(LBITS),64)
+   # 64 bit stuff here
+   CFLAGS+=-fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64
+else
+   # 32 bit stuff here
+endif
+
+LIBS= -lm -ldl -lpthread
+LIBS+= -L$(LIB_DIR) -luriparser -lcjson -lmongoose -lmingw32 -lSDL2main -lSDL2
+# Live555's libs
+LIBS+= -lliveMedia -lgroupsock -lBasicUsageEnvironment -lUsageEnvironment
+# FFmpeg libs
+LIBS+= -lmp3lame -lx264 -lavdevice -lavformat -lavfilter -lavcodec -lswscale -lavutil -lswresample
+# Local libs
+LIBS+= -lmediaprocsutils -lmediaprocs -lmediaprocsmuxers -lmediaprocscodecs
+
+_OBJ = $(wildcard $(SRCDIR)/*.c)
+OBJ = $(patsubst $(SRCDIR)/%.c,$(BUILDDIR)/%.o,$(_OBJ))
+EXE_SUFFIX = $(patsubst $(SRCDIR)/%.c,%,$(_OBJ))
+
+.PHONY : $(SRCDIR) $(BUILDDIR)
+
+all: build
+
+config:
+	@mkdir -p $(BUILDDIR)
+	@mkdir -p $(BUILDDIR)/examples
+
+build: config
+	$(MAKE) $(EXE_DIR)/$(EXE_PREFIX)_$(EXE_SUFFIX)
+	#chmod +x $(EXE_DIR)/$(EXE_PREFIX)_$(EXE_SUFFIX)
+
+$(BUILDDIR)/%.o: $(SRCDIR)/%.c
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+$(EXE_DIR)/$(EXE_PREFIX)_$(EXE_SUFFIX): $(OBJ)
+	$(CC) -o $@.exe $^ $(CFLAGS) $(LIBS) -lstdc++
+
+clean:
+	rm -f $(EXE_DIR)/$(EXE_PREFIX)_$(EXE_SUFFIX)

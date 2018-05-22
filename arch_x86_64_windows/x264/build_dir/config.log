@@ -1,0 +1,86 @@
+checking for -Werror=unknown-warning-option... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -mthreads -mtune=generic -O2 -pipe -Wall -O3 -fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wall -O3 -fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wall -O3 -fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L  -Werror=unknown-warning-option  -pipe -static-libgcc -static-libstdc++ -o conftest
+cc1.exe: error: -Werror=unknown-warning-option: no option -Wunknown-warning-option
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -lshell32... yes
+checking for -S... yes
+checking for -Wl,--high-entropy-va... yes
+checking whether windres works... yes
+checking whether !WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP) is true... no
+--------------------------------------------------
+conftest.c:3:2: error: #error 
+ #error
+  ^~~~~
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+#include <winapifamily.h>
+#if !(!WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)) 
+#error  
+#endif 
+--------------------------------------------------
+x264 configure script
+Command line options: "--prefix=/trunk/MediaProcessors_selfcontained/_install_dir_x86_64" "--enable-shared" "--disable-avs" "--disable-swscale" "--disable-lavf" "--disable-ffms" "--disable-gpac" "--disable-lsmash"
+
+checking whether gcc works... yes
+checking whether gcc supports for( int i = 0; i < 9; i++ ); with -std=gnu99... yes
+checking for -mpreferred-stack-boundary=6... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m64 -mthreads -mtune=generic -O2 -pipe -Wall -O3 -fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wall -O3 -fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wall -O3 -fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE  -mpreferred-stack-boundary=6  -lshell32 -Wl,--image-base,0x140000000 -m64 -pipe -static-libgcc -static-libstdc++  -Wl,--high-entropy-va -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+cc1.exe: error: -mpreferred-stack-boundary=6 is not between 3 and 4
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking for -mpreferred-stack-boundary=5... no
+Failed commandline was:
+--------------------------------------------------
+gcc conftest.c -m64 -mthreads -mtune=generic -O2 -pipe -Wall -O3 -fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wall -O3 -fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wall -O3 -fPIC -D_LARGE_FILE_API -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wall -I. -I$(SRCPATH) -D_POSIX_C_SOURCE=200112L -std=gnu99 -D_GNU_SOURCE  -mpreferred-stack-boundary=5  -lshell32 -Wl,--image-base,0x140000000 -m64 -pipe -static-libgcc -static-libstdc++  -Wl,--high-entropy-va -Wl,--dynamicbase,--nxcompat,--tsaware -o conftest
+cc1.exe: error: -mpreferred-stack-boundary=5 is not between 3 and 4
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+int main (void) {  return 0; }
+--------------------------------------------------
+checking whether nasm supports vmovdqa32 [eax]{k1}{z}, zmm0... yes
+checking whether gcc supports __asm__("pabsw %xmm0, %xmm0");... yes
+checking for return log2f(2); in math.h... yes
+checking for uint32_t test_vec __attribute__ ((vector_size (16))) = {0,1,2,3}; in stdint.h... yes
+checking for stdio.h... yes
+checking for -fno-tree-vectorize... yes
+checking for fseeko(stdin,0,0); in stdio.h... yes
+checking for -Wshadow... yes
+checking for -Wmaybe-uninitialized... yes
+
+platform:      X86_64
+byte order:    little-endian
+system:        WINDOWS
+cli:           yes
+libx264:       internal
+shared:        yes
+static:        no
+asm:           yes
+interlaced:    yes
+avs:           no
+lavf:          no
+ffms:          no
+mp4:           no
+gpl:           yes
+thread:        win32
+opencl:        yes
+filters:       crop select_every 
+lto:           no
+debug:         no
+gprof:         no
+strip:         no
+PIC:           yes
+bit depth:     8
+chroma format: all

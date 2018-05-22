@@ -1,0 +1,80 @@
+UnitTest++/TestList.lo: \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/TestList.cpp \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/TestList.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/HelperMacros.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/Config.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/Test.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/TestDetails.h \
+ C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/cassert \
+ C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/x86_64-w64-mingw32/bits/c++config.h \
+ C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/x86_64-w64-mingw32/bits/os_defines.h \
+ C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/assert.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/stdlib.h \
+ C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/cstdlib \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/limits.h \
+ C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/syslimits.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/limits.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/malloc.h \
+ C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/bits/std_abs.h
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/TestList.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/HelperMacros.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/Config.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/Test.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/unittest-cpp/UnitTest++/TestDetails.h:
+
+C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/cassert:
+
+C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/x86_64-w64-mingw32/bits/c++config.h:
+
+C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/x86_64-w64-mingw32/bits/os_defines.h:
+
+C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/x86_64-w64-mingw32/bits/cpu_defines.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/assert.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
+
+C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/stdlib.h:
+
+C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/cstdlib:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h:
+
+C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/limits.h:
+
+C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/syslimits.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/limits.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/malloc.h:
+
+C:/media_autobuild/msys64/mingw64/include/c++/7.3.0/bits/std_abs.h:

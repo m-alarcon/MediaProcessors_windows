@@ -1,0 +1,2 @@
+tool/uriparse-uriparse.o: \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/tool/uriparse.c

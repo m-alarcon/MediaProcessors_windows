@@ -1,0 +1,101 @@
+src/UriParse.lo: \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/src/UriParse.c \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriDefsConfig.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/src/UriParse.c \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriDefsAnsi.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriDefsConfig.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/Uri.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriDefsAnsi.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriBase.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/ctype.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/limits.h \
+ C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/syslimits.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/limits.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/malloc.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriIp4.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/src/UriCommon.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/src/UriParseBase.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriBase.h
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriDefsConfig.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/src/UriParse.c:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriDefsAnsi.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriDefsConfig.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/Uri.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriDefsAnsi.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriBase.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/ctype.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/string.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h:
+
+C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/limits.h:
+
+C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/syslimits.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/limits.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/malloc.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriIp4.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/src/UriCommon.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/src/UriParseBase.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/uriparser/include/uriparser/UriBase.h:

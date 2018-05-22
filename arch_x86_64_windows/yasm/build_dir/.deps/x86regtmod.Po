@@ -1,0 +1,190 @@
+x86regtmod.o: x86regtmod.c \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/util.h \
+ config.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/stdarg.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/stddef.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stddef.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/limits.h \
+ C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/syslimits.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/limits.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/malloc.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/assert.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/strings.h \
+ libyasm-stdint.h \
+ C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/stdint.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdint.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/coretype.h \
+ C:/media_autobuild/msys64/mingw64/include/libintl.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/locale.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/compat-queue.h \
+ C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/ctype.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/valparam.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/linemap.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/errwarn.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/intnum.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/floatnum.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/expr.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/value.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/symrec.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/bytecode.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/section.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/insn.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/arch.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/dbgfmt.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/objfmt.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/listfmt.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/parser.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/preproc.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/file.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/module.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/hamt.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/md5.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/phash.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/modules/arch/x86/x86arch.h \
+ C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/bitvect.h
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/util.h:
+
+config.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h:
+
+C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/stdarg.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdarg.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h:
+
+C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/stddef.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stddef.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h:
+
+C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/limits.h:
+
+C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed/syslimits.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/limits.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/malloc.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/string.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/assert.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/strings.h:
+
+libyasm-stdint.h:
+
+C:/media_autobuild/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/stdint.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/stdint.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/coretype.h:
+
+C:/media_autobuild/msys64/mingw64/include/libintl.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/locale.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/compat-queue.h:
+
+C:/media_autobuild/msys64/mingw64/x86_64-w64-mingw32/include/ctype.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/valparam.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/linemap.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/errwarn.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/intnum.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/floatnum.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/expr.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/value.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/symrec.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/bytecode.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/section.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/insn.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/arch.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/dbgfmt.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/objfmt.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/listfmt.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/parser.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/preproc.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/file.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/module.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/hamt.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/md5.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/phash.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/modules/arch/x86/x86arch.h:
+
+C:/media_autobuild/MediaProcessors_selfcontained/3rdplibs/yasm/libyasm/bitvect.h:

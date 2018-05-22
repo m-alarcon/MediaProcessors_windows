@@ -1,0 +1,10 @@
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/install/strip.dir
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/install/local.dir
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/install.dir
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/list_install_components.dir
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/SDL2.dir
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/rebuild_cache.dir
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/SDL2main.dir
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/uninstall.dir
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/SDL2-static.dir
+C:/media_autobuild/MediaProcessors_selfcontained/arch_x86_64_windows/sdl/build_dir/CMakeFiles/edit_cache.dir
